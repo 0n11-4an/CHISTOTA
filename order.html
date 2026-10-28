@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Онлайн-заявка — Чистота</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-inner">
+            <div class="logo">Чистота</div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="about.html">О химчистке</a></li>
+                    <li><a href="services.html">Услуги</a></li>
+                    <li><a href="portfolio.html">Примеры работ</a></li>
+                </ul>
+            </nav>
+            <a href="order.html" class="btn-order">Оставить заявку</a>
+        </div>
+    </header>
+
+    <main>
+        <section>
+            <div class="container">
+                <h2>Онлайн-заявка на чистку</h2>
+                <form id="order-form" class="form-block">
+                    <label for="name">Ваше имя</label>
+                    <input type="text" id="name" placeholder="Иван Иванов" required>
+
+                    <label for="phone">Телефон</label>
+                    <input type="tel" id="phone" placeholder="+7 (___) ___-__-__" required>
+
+                    <label for="service">Услуга</label>
+                    <select id="service" required>
+                        <option value="">— выберите услугу —</option>
+                        <option value="odezhda">Чистка одежды</option>
+                        <option value="kovry">Чистка ковров</option>
+                        <option value="mebel">Чистка мебели</option>
+                    </select>
+
+                    <label for="date">Удобная дата</label>
+                    <input type="date" id="date">
+
+                    <label for="comment">Комментарий</label>
+                    <textarea id="comment" rows="4" placeholder="Опишите, что нужно почистить"></textarea>
+
+                    <button type="submit">Отправить заявку</button>
+                    <div class="form-message" id="form-message"></div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <h4>Наши контакты</h4>
+        <p>Адрес: г. Энгельс, ул. Тельмана, д. 14</p>
+        <p>Телефон: +7 (917) 842-57-43</p>
+        <p>Email: info@chistota.ru</p>
+        <p>Режим работы: пн–сб с 08:00 до 20:00, вс с 10:00 до 16:00</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
